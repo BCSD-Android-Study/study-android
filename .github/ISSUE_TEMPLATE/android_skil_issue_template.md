@@ -1,5 +1,5 @@
 ---
-name: android_skil_issue_template
+name: 안드로이드 기술 이슈 템플릿
 about: 해당 이슈 템플릿을 사용해서 안드로이드 기술 이슈를 만들어주세요.
 title: "[Android Skil] {Skil}"
 labels: ''

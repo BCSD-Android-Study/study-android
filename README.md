@@ -1,8 +1,8 @@
 # 안드로이드 기술 스터디
 
 - 회의 : 디스코드
-- 일시 : 매 주 *요일 N시
-- 과제 제출 기간 : 매 주 전날 오후 11시 59분까지
+- 일시 : 매 주 토요일 오후 10시
+- 과제 제출 기간 : 매 주 금요일 오후 11시 59분까지
 
 
 ## 스터디 진행 방식
@@ -28,8 +28,7 @@
 - PR은 별도로 Fork를 진행해서, 해당 레포지토리로 Merge하는 방식으로 진행합니다. (잔디 채워야겠지? + 포폴 준비하기도 편하고~)
 
 ## Fork 하는 방법
-https://atom-feet-3b2.notion.site/Fork-f0344257435640c2be472a6cc5f397e6?pvs=4
-
+https://blog.bcsdlab.com/android/react/jkh_study_fork
 
 ## 커밋 규칙
 - 가장 중요한 것은 commit 분리를 잘해주시면 좋겠습니다!
@@ -67,8 +66,8 @@ https://atom-feet-3b2.notion.site/Fork-f0344257435640c2be472a6cc5f397e6?pvs=4
 ## 스터디 계획 일정
 |   주제   |     일정      |                진행과정                 |
 | :-----------: | :-----------: | :---------------------------------: |
-|   Android   | 2024-05-01 ~ 2024.05-08 |         Version Catalog         |
-|   Android   | 2024-05-08 ~ 2024.05-15 |           Test Code with Junit (TDD)        |
+|   Android   | 2024-05-11 ~ 2024.05-18 |         Version Catalog         |
+|   Android   | 2024-05-18 ~ 2024.05-25 |           Test Code with Junit (TDD)        |
 
 
 ## Contributor

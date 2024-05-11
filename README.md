@@ -28,8 +28,7 @@
 - PR은 별도로 Fork를 진행해서, 해당 레포지토리로 Merge하는 방식으로 진행합니다. (잔디 채워야겠지? + 포폴 준비하기도 편하고~)
 
 ## Fork 하는 방법
-https://atom-feet-3b2.notion.site/Fork-f0344257435640c2be472a6cc5f397e6?pvs=4
-
+https://blog.bcsdlab.com/android/react/jkh_study_fork
 
 ## 커밋 규칙
 - 가장 중요한 것은 commit 분리를 잘해주시면 좋겠습니다!

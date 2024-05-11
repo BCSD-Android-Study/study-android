@@ -66,8 +66,8 @@ https://blog.bcsdlab.com/android/react/jkh_study_fork
 ## 스터디 계획 일정
 |   주제   |     일정      |                진행과정                 |
 | :-----------: | :-----------: | :---------------------------------: |
-|   Android   | 2024-05-01 ~ 2024.05-08 |         Version Catalog         |
-|   Android   | 2024-05-08 ~ 2024.05-15 |           Test Code with Junit (TDD)        |
+|   Android   | 2024-05-11 ~ 2024.05-18 |         Version Catalog         |
+|   Android   | 2024-05-18 ~ 2024.05-25 |           Test Code with Junit (TDD)        |
 
 
 ## Contributor

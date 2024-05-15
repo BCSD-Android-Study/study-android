@@ -1,4 +1,10 @@
 [versions]
+minSdk = "26"
+targetSdk = "34"
+compileSdk = "34"
+versionCode = "1"
+versionName = "1.0.0"
+
 # androidx
 androidxCore = "1.9.0"
 androidxAppcompat = "1.6.1"
@@ -19,6 +25,7 @@ junit4 = "4.13.2"
 # Android Test
 androidxTestExt = "1.1.5"
 androidxTestEspresso = "3.5.1"
+jetbrainsKotlinJvm = "1.9.0"
 
 [libraries]
 androidx-core = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
@@ -35,7 +42,12 @@ junit = { group = "junit", name = "junit", version.ref = "junit4" }
 androidx-test-ext = { group = "androidx.test.ext", name = "junit", version.ref = "androidxTestExt" }
 androidx-test-espresso = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidxTestEspresso" }
 
+# Dependencies build-logic
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+androidLibrary = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+jetbrainsKotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }

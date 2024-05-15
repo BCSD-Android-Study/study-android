@@ -1,0 +1,41 @@
+[versions]
+# androidx
+androidxCore = "1.9.0"
+androidxAppcompat = "1.6.1"
+androidxConstraintlayout = "2.1.4"
+
+# AGP
+androidGradlePlugin = "8.1.4"
+
+# kotlin
+kotlin = "1.9.0"
+
+# material
+material = "1.11.0"
+
+# Test
+junit4 = "4.13.2"
+
+# Android Test
+androidxTestExt = "1.1.5"
+androidxTestEspresso = "3.5.1"
+
+[libraries]
+androidx-core = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppcompat" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "androidxConstraintlayout" }
+
+# material
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+# Test
+junit = { group = "junit", name = "junit", version.ref = "junit4" }
+
+# Android Test
+androidx-test-ext = { group = "androidx.test.ext", name = "junit", version.ref = "androidxTestExt" }
+androidx-test-espresso = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidxTestEspresso" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

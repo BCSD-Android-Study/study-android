@@ -1,0 +1,31 @@
+[versions]
+androidXCoreVersion = "1.8.0"
+androidXAppcompatVersion = "1.6.1"
+androidXConstraintlayoutVersion = "2.1.4"
+androidXTestJuintVersion = "1.1.5"
+androidXTestEspressoCoreVersoin = "3.5.1"
+
+androidMaterialVersion = "1.5.0"
+junitVersion = "4.13.2"
+
+androidApplicationVersion = "8.0.2"
+androidLibraryVersion = "8.0.2"
+kotlinVersion = "1.8.20"
+
+[libraries]
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidXCoreVersion" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidXAppcompatVersion" }
+androidx-material = { module = "com.google.android.material:material", version.ref = "androidMaterialVersion" }
+androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "androidXConstraintlayoutVersion" }
+
+juint = { module = "junit:junit", version.ref = "junitVersion" }
+androidx-test-juint = { module = "androidx.test.ext:junit", version.ref = "androidXTestJuintVersion" }
+androidx-test-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "androidXTestEspressoCoreVersoin" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidApplicationVersion" }
+android-library = {id = "com.android.library", version.ref = "androidLibraryVersion"}
+android-kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinVersion" }
+
+[bundles]

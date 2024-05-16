@@ -9,8 +9,8 @@ internal class AndroidApplicationConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             with(pluginManager) {
-                apply("com.android.application")
-                apply("org.jetbrains.kotlin.android")
+                apply(libs.findPlugin("android-application").get().get().pluginId)
+                apply(libs.findPlugin("kotlin").get().get().pluginId)
             }
 
             extensions.configure<ApplicationExtension> {

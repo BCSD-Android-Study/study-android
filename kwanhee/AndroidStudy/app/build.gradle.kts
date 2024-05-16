@@ -1,5 +1,6 @@
 plugins {
     id("study.plugin.application")
+    id("study.plugin.android.compose")
 }
 
 android {
@@ -25,7 +26,18 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.material)
+
+    // compose
+    implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.compose.ui)
+    implementation(libs.androidx.compose.material3)
+
+    // test
     implementation(libs.junit)
+    implementation(libs.androidx.compose.ui.test)
+
+    // android test
     implementation(libs.androidx.test.ext)
     implementation(libs.androidx.test.espresso)
 }

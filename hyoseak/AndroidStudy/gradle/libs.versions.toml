@@ -27,5 +27,7 @@ androidx-test-espresso-core = { module = "androidx.test.espresso:espresso-core",
 android-application = { id = "com.android.application", version.ref = "androidApplicationVersion" }
 android-library = {id = "com.android.library", version.ref = "androidLibraryVersion"}
 android-kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinVersion" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlinVersion" }
+
 
 [bundles]

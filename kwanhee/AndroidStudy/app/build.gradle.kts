@@ -1,6 +1,7 @@
 plugins {
     id("study.plugin.application")
     id("study.plugin.android.compose")
+    id("study.plugin.android.hilt")
 }
 
 android {

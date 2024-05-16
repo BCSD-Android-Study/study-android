@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Android-Study"
 include(":app")
+include(":data")

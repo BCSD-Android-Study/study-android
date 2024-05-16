@@ -16,11 +16,19 @@ gradlePlugin {
     plugins {
         register("AndroidApplicationPlugin") {
             id = "study.plugin.application"
-            implementationClass ="AndroidApplicationConventionPlugin"
+            implementationClass = "AndroidApplicationConventionPlugin"
         }
         register("AndroidApplicationComposePlugin") {
             id = "study.plugin.android.compose"
             implementationClass = "AndroidApplicationComposeConventionPlugin"
+        }
+        register("AndroidLibraryPlugin") {
+            id = "study.plugin.android.library"
+            implementationClass = "AndroidLibraryConventionPlugin"
+        }
+        register("AndroidHiltPlugin") {
+            id = "study.plugin.android.hilt"
+            implementationClass = "AndroidHiltConventionPlugin"
         }
     }
 }

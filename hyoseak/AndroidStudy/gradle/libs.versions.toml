@@ -22,12 +22,17 @@ juint = { module = "junit:junit", version.ref = "junitVersion" }
 androidx-test-juint = { module = "androidx.test.ext:junit", version.ref = "androidXTestJuintVersion" }
 androidx-test-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "androidXTestEspressoCoreVersoin" }
 
+kotlin-gradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinVersion" }
+android-gradle-tool = { module = "com.android.tools.build:gradle", version.ref = "androidApplicationVersion" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidApplicationVersion" }
 android-library = {id = "com.android.library", version.ref = "androidLibraryVersion"}
 android-kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinVersion" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlinVersion" }
+
+id-application = { id = "id.plugin.application", version = "unspecified" }
 
 
 [bundles]

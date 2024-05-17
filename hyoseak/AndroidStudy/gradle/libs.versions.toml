@@ -15,6 +15,12 @@ kotlinVersion = "1.8.20"
 hiltVersion = "2.50"
 hiltComposeVersion="1.0.0"
 
+
+activityComposeVersion = "1.8.2"
+composeNavigationVersion = "2.7.7"
+composeBomVersion = "2024.02.02"
+composeCompilerVersion = "1.5.10"
+
 [libraries]
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidXCoreVersion" }
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidXAppcompatVersion" }
@@ -35,6 +41,17 @@ hilt-compose= {module= "androidx.hilt:hilt-navigation-compose", version.ref = "h
 
 
 
+activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityComposeVersion" }
+compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBomVersion" }
+compose-ui = { module = "androidx.compose.ui:ui" }
+compose-graphics = { module = "androidx.compose.ui:ui-graphics" }
+compose-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-material3 = { module = "androidx.compose.material3:material3" }
+compose-ui-test = { module = "androidx.compose.ui:ui-test-junit4" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
+compose-navigation = {module = "androidx.navigation:navigation-compose", version.ref = "composeNavigationVersion"}
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidApplicationVersion" }
@@ -46,6 +63,9 @@ hilt = { id = "com.google.dagger.hilt.android", version.ref = "hiltVersion" }
 
 id-application = { id = "id.plugin.application", version = "unspecified" }
 study-hilt = { id = "study.plugin.hilt", version = "unspecified" }
+study-compose = { id = "study.plugin.compose", version = "unspecified" }
 
 [bundles]
 hilt = ["hilt-compose", "hilt-android"]
+compose = ["compose-ui", "compose-graphics", "compose-preview", "compose-material3", "activity-compose", "compose-ui-tooling"]
+compose_debug_test = ["compose-ui-tooling", "compose-ui-test-manifest"]

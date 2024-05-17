@@ -26,4 +26,11 @@ gradlePlugin {
             implementationClass = "AndroidHiltConventionPlugin"
         }
     }
+
+    plugins {
+        register("AndroidComposePlugin") {
+            id = "study.plugin.compose"
+            implementationClass = "AndroidComposeConventionPlugin"
+        }
+    }
 }

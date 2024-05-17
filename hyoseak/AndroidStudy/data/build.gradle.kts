@@ -1,13 +1,12 @@
 @Suppress("DSL_SCOPE_VIOLATION")
+
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.android.kotlin)
-    alias(libs.plugins.study.hilt)
 }
 
 android {
-    namespace = "com.example.ui"
-
+    namespace = "com.example.data"
     compileSdk = 34
 
     defaultConfig {
@@ -27,6 +26,13 @@ android {
             )
         }
     }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 
 dependencies {
@@ -37,6 +43,8 @@ dependencies {
     implementation (libs.androidx.appcompat)
     implementation (libs.androidx.material)
     implementation (libs.androidx.constraintlayout)
+    implementation(libs.okhttp)
+    implementation(libs.retrofit)
     testImplementation (libs.juint)
     androidTestImplementation (libs.androidx.test.juint)
     androidTestImplementation (libs.androidx.test.espresso.core)

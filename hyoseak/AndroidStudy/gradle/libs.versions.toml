@@ -12,6 +12,9 @@ androidApplicationVersion = "8.0.2"
 androidLibraryVersion = "8.0.2"
 kotlinVersion = "1.8.20"
 
+hiltVersion = "2.50"
+hiltComposeVersion="1.0.0"
+
 [libraries]
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidXCoreVersion" }
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidXAppcompatVersion" }
@@ -25,6 +28,13 @@ androidx-test-espresso-core = { module = "androidx.test.espresso:espresso-core",
 kotlin-gradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinVersion" }
 android-gradle-tool = { module = "com.android.tools.build:gradle", version.ref = "androidApplicationVersion" }
 
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltVersion" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltVersion" }
+hilt-gradle-plugin = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "hiltVersion" }
+hilt-compose= {module= "androidx.hilt:hilt-navigation-compose", version.ref = "hiltComposeVersion"}
+
+
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidApplicationVersion" }
@@ -32,7 +42,10 @@ android-library = {id = "com.android.library", version.ref = "androidLibraryVers
 android-kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinVersion" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlinVersion" }
 
-id-application = { id = "id.plugin.application", version = "unspecified" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hiltVersion" }
 
+id-application = { id = "id.plugin.application", version = "unspecified" }
+study-hilt = { id = "study.plugin.hilt", version = "unspecified" }
 
 [bundles]
+hilt = ["hilt-compose", "hilt-android"]

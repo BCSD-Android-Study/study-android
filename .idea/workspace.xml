@@ -16,7 +16,56 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cff3869-d72f-4642-92b1-08019e588ce3" name="Changes" comment="" />
+    <list default="true" id="0cff3869-d72f-4642-92b1-08019e588ce3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/.idea/dictionaries" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/androidTest/java/com/wateralsie/androidstudy/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/java/com/wateralsie/androidstudy/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/mipmap-anydpi/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/app/src/test/java/com/wateralsie/androidstudy/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumin/AndroidStudy/settings.gradle.kts" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,19 +80,40 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2gK6EgzJ0R6xHXPp3cQG5Z0FLfh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "main"
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "android.gradle.sync.needed": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/watermin/Android/Study/study-android"
   }
 }]]></component>
   <component name="RunManager">

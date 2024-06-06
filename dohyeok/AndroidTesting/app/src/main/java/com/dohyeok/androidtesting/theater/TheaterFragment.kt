@@ -13,6 +13,8 @@ class TheaterFragment : Fragment() {
     private var _binding: FragmentTheaterBinding? = null
     private val binding get() = _binding!!
 
+    private var isMonday = true
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         _binding = FragmentTheaterBinding.inflate(layoutInflater, container, false)
         return binding.root
@@ -21,6 +23,23 @@ class TheaterFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        initListener()
+    }
+
+    @SuppressLint("SetTextI18n")
+    private fun initListener() {
+        with(binding) {
+            btnCheck.setOnClickListener {
+                tvCheckResult.text = "티켓 가격은 ${TheaterUtil.ticketPrice(Integer.parseInt(etAge.text.toString()), isMonday)}$"
+            }
+
+            btnChangeWeek.setOnClickListener {
+                tvWeek.text =
+                    if (isMonday) "월요일 아님"
+                    else "월요일"
+                isMonday = !isMonday
+            }
+        }
     }
 
 }

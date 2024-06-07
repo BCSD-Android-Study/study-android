@@ -7,6 +7,7 @@ pluginManagement {
                 includeGroupByRegex("androidx.*")
             }
         }
+        maven { url = uri("https://maven.pkg.jetbrains.space/public/p/compose/dev") }
         mavenCentral()
         gradlePluginPortal()
     }
@@ -23,3 +24,5 @@ rootProject.name = "AndroidStudy"
 include(":app")
 include(":domain")
 include(":data")
+include(":build-logic")
+include(":convention")

@@ -20,6 +20,10 @@ pluginManagement {
         mavenCentral()
         gradlePluginPortal()
     }
+
+}
+
+gradlePlugin {
     register("AndroidApplicationComposePlugin") {
         id = "study.plugin.android.compose"
         implementationClass = "AndroidApplicationComposeConventionPlugin"

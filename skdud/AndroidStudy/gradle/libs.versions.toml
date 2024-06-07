@@ -16,8 +16,11 @@ composeNavigationVersion = "2.7.7"
 hiltComposeVersion="1.0.0"
 retrofit = "2.9.0"
 hilt = "2.50"
+hilt-version = "2.44"
 composeBom = "2024.05.00"
 composeCompiler = "1.1.0"
+ksp-version = "1.9.22-1.0.17"
+
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -41,14 +44,18 @@ compose-navigation = {module = "androidx.navigation:navigation-compose", version
 hilt-compose= {module= "androidx.hilt:hilt-navigation-compose", version.ref = "hiltComposeVersion"}
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 hilt = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
-hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt-version" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt-version" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
 android-library = { id = "com.android.library", version.ref = "agp" }
-hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+compose = { id = "study.plugin.android.compose", version = "unspecified" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp-version" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt-version" }
 
 [bundles]
 compose = ["compose-runtime", "compose-ui", "compose-graphics", "compose-preview", "compose-material", "compose-ui-test"]
+hilt = ["hilt-compose", "hilt"]

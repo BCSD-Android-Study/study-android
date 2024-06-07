@@ -37,8 +37,8 @@ dependencies {
     implementation(libs.androidx.compose.material3)
 
     // test
-    implementation(libs.junit)
-    implementation(libs.androidx.compose.ui.test)
+    testImplementation(libs.junit)
+    testImplementation(libs.androidx.compose.ui.test)
 
     // android test
     implementation(libs.androidx.test.ext)

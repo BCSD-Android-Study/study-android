@@ -11,7 +11,7 @@ androidxLifecycle = "2.6.1"
 androidxAppcompat = "1.6.1"
 androidxConstraintlayout = "2.1.4"
 androidxComposeCompiler = "1.5.0"
-androidxComposeBom = "2024.05.00"
+androidxComposeBom = "2023.08.00"
 
 # network
 retrofit = "2.9.0"

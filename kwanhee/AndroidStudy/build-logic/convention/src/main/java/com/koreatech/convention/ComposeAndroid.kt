@@ -15,7 +15,7 @@ internal fun Project.configureComposeAndroid(
         }
 
         composeOptions {
-            kotlinCompilerExtensionVersion = libs.findVersion("androidxComposeCompiler").get().toString()
+            kotlinCompilerExtensionVersion = "1.5.2"
         }
 
         dependencies {
@@ -35,7 +35,6 @@ internal fun Project.configureComposeAndroid(
         tasks.withType<KotlinCompile>().configureEach {
             kotlinOptions {
                 freeCompilerArgs += buildComposeMetricsParameters()
-                freeCompilerArgs += stabilityConfiguration()
             }
         }
     }

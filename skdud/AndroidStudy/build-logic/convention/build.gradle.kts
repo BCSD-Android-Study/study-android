@@ -28,6 +28,11 @@ pluginManagement {
         id = "study.plugin.android.hilt"
         implementationClass = "AndroidHiltConventionPlugin"
     }
+    register("AndroidLibraryPlugin") {
+        id = "study.plugin.android.library"
+        implementationClass = "AndroidLibraryConventionPlugin"
+    }
+    }
 }
 
 include(":app")

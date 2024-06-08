@@ -6,13 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import com.dohyeok.androidtesting.databinding.FragmentTheaterBinding
+import kotlinx.coroutines.launch
 
 
 class TheaterFragment : Fragment() {
     private var _binding: FragmentTheaterBinding? = null
     private val binding get() = _binding!!
 
+    private val viewModel: TheaterViewModel by viewModels()
     private var isMonday = true
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -24,6 +30,7 @@ class TheaterFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         initListener()
+        initObserver()
     }
 
     @SuppressLint("SetTextI18n")
@@ -34,12 +41,20 @@ class TheaterFragment : Fragment() {
             }
 
             btnChangeWeek.setOnClickListener {
-                tvWeek.text =
-                    if (isMonday) "월요일 아님"
-                    else "월요일"
-                isMonday = !isMonday
+                viewModel.changeDayOfWeek()
             }
         }
     }
 
+    private fun initObserver() {
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewLifecycleOwner.lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                launch {
+                    viewModel.isMonday.observe(viewLifecycleOwner) { isMonday ->
+                        binding.tvWeek.text = if(isMonday) "월요일" else "월요일 아님"
+                    }
+                }
+            }
+        }
+    }
 }

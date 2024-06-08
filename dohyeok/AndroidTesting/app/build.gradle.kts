@@ -48,4 +48,7 @@ dependencies {
     implementation(libs.lifecycle.livedata)
 
     implementation(libs.fragment.ktx)
+
+    // test
+    testImplementation(libs.arch.test)
 }

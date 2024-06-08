@@ -17,4 +17,10 @@ class TheaterViewModel : ViewModel() {
             }
         }
     }
+
+    fun changeDayOfWeekWithoutScope() {
+        _isMonday.value?.let {
+            _isMonday.value = !it
+        }
+    }
 }

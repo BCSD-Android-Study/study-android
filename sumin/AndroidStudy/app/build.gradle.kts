@@ -55,16 +55,16 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     /*** Compose ***/
-    implementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(platform(libs.androidx.compose.bom))
+    implementation(platform(libs.compose.bom))
+    androidTestImplementation(platform(libs.compose.bom))
     // Material Design 3
-    implementation(libs.androidx.compose.material3)
+    implementation(libs.compose.material3)
     // Preview
-    implementation(libs.androidx.compose.ui.tooling.preview)
-    debugImplementation(libs.androidx.compose.ui.tooling)
+    implementation(libs.compose.ui.tooling.preview)
+    debugImplementation(libs.compose.ui.tooling)
     // UI Tests
-    androidTestImplementation(libs.androidx.compose.ui.test.junit4)
-    debugImplementation(libs.androidx.compose.ui.test.manifest)
+    androidTestImplementation(libs.compose.ui.test.junit4)
+    debugImplementation(libs.compose.ui.test.manifest)
 
     /*** Dependency Injection ***/
     implementation(libs.hilt.android)

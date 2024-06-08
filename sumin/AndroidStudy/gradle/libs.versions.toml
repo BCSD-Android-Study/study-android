@@ -34,4 +34,5 @@ androidx-compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-mani
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
 

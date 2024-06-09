@@ -1,4 +1,8 @@
 [versions]
+minSdk = "28"
+compileSdk = "34"
+targetSdk = "34"
+
 agp = "8.3.2"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -11,6 +15,7 @@ constraintlayout = "2.1.4"
 
 # compose
 composeBom = "2024.05.00"
+composeCompiler = "1.5.13"
 
 # network
 okhttp = "4.12.0"
@@ -52,11 +57,20 @@ hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-comp
 # kotlin
 kotlin-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlinVersion" }
 
+[bundles]
+compose = [
+    "compose-material3",
+    "compose-ui-tooling-preview",
+    "compose-ui-tooling",
+    "compose-ui-test-junit4",
+    "compose-ui-test-manifest"
+]
+
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinVersion" }
 jetbrainsKotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlinVersion" }
-androidLibrary = { id = "com.android.library", version.ref = "agp" }
 kotlinKapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlinVersion" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 
